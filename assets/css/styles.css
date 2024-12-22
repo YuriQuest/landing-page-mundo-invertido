@@ -1,2 +1,83 @@
 @import url(./reset.css);
 
+*{
+    border: 1px solid red;
+}
+
+/* Flex config */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div,
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-stranger-things-gallery 
+.container{
+    flex-direction: column;
+    align-items: baseline;
+    
+    .gallery-container{
+        display: flex;
+    }
+}
+
+#section-form,
+#form-content{
+    flex-direction: column;
+}
+
+/* basic dimensions */
+
+header{
+    margin: 20px;
+
+    p{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+main #section-inverted-world{
+    margin: 30px 0;
+}
+
+p{
+    max-width: 50vw;
+}
+
+.container div{
+    margin-right: 40px;
+}
+
+.gallery-image{
+    width: 230px;
+    height: 230px;
+    object-fit: fit;
+
+    margin-right: 30px;
+
+    img {
+        display: block;
+        margin: auto;
+        height: 230px;
+    }
+}
+
+#section-stranger-things-gallery 
+.container{
+    margin-left: 50px;
+}
